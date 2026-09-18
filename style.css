@@ -3308,3 +3308,33 @@ button {
 
     color: #d9c7af;
 }
+
+/* MOBILE BACKGROUND FIX */
+html,
+body {
+    background: #0b0b0b !important;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #0b0b0b !important;
+}
+
+.screen {
+    background-color: #0b0b0b;
+}
+
+@media (max-width: 900px) {
+    html,
+    body {
+        background: #0b0b0b !important;
+        min-height: 100svh;
+        overflow-x: hidden;
+    }
+
+    .screen {
+        background: #0b0b0b !important;
+        min-height: 100svh;
+    }
+}
