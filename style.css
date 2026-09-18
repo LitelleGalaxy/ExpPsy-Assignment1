@@ -3338,3 +3338,14 @@ body {
         min-height: 100svh;
     }
 }
+
+/* =========================================================
+   MOBILE COMIC HEADER FIX
+   Hide duplicate comic branding
+========================================================= */
+
+@media (max-width: 800px) {
+    .comic-brand {
+        display: none !important;
+    }
+}
