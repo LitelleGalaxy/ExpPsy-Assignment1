@@ -3349,3 +3349,85 @@ body {
         display: none !important;
     }
 }
+
+/* =========================================================
+   COMIC NAVIGATION HINT
+========================================================= */
+
+.scene-scroll {
+    opacity: 0.8;
+    animation: scrollHintPulse 2.5s ease-in-out infinite;
+}
+
+.mobile-swipe {
+    display: none;
+}
+
+.mobile-swipe strong {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    animation: swipeArrow 1.4s ease-in-out infinite;
+}
+
+@keyframes scrollHintPulse {
+    0%, 100% {
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes swipeArrow {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-6px);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .comic-section {
+        touch-action: pan-y;
+    }
+
+    .scene-scroll {
+        display: flex !important;
+        left: 50%;
+        bottom: 20px;
+        z-index: 50;
+        gap: 10px;
+    }
+
+    .desktop-scroll {
+        display: none;
+    }
+
+    .mobile-swipe {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 420px) {
+
+    .scene-scroll {
+        bottom: 16px;
+    }
+
+    .mobile-swipe {
+        font-size: 6px;
+        letter-spacing: 2.5px;
+    }
+}
