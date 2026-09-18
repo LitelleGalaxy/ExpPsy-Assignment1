@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Albert: The Making of a Fear</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div id="loader">
+        <div class="loader-inner">
+            <span>PSYCHOLOGY EXHIBIT</span>
+            <h1>Little Albert</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-brand">
+            <span class="site-brand-eyebrow">
+                Psychology Exhibit
+            </span>
+
+            <span class="site-brand-title">
+                Little Albert
+            </span>
+        </div>
+
+        <button
+            id="menuBtn"
+            class="menu-btn"
+            aria-label="Open navigation"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <div id="menuOverlay" class="menu-overlay">
+
+        <div class="menu-inner">
+
+            <div class="menu-heading">
+                <span>THE EXHIBIT</span>
+                <h2>Little Albert</h2>
+            </div>
+
+            <nav>
+
+                <button data-section="intro">
+                    <span>00</span>
+                    Introduction
+                </button>
+
+                <button data-section="comic">
+                    <span>01</span>
+                    The Experiment
+                </button>
+
+                <button data-section="conditioning">
+                    <span>02</span>
+                    How Fear Was Learned
+                </button>
+
+                <button data-section="ethics">
+                    <span>03</span>
+                    The Ethical Question
+                </button>
+
+                <button data-section="memory">
+                    <span>04</span>
+                    Real Life Experience
+                </button>
+
+                <button data-section="final">
+                    <span>05</span>
+                    Reflection
+                </button>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section
+            id="intro"
+            class="screen intro-section active"
+        >
+
+            <div class="intro-background"></div>
+
+            <div class="intro-content">
+
+                <span class="intro-eyebrow">
+                    PSYCHOLOGY EXHIBIT: An Interactive Click and Scroll Comic
+                </span>
+
+                <h1>
+                    Little Albert:
+                    <br>
+                    <em>The Making of a Fear</em>
+                </h1>
+
+                <p class="intro-subtitle">
+                    When fear is learned, not born.
+                </p>
+
+                <p class="intro-description">
+                    This interactive exhibit explores John B. Watson and 
+                    Rosalie Rayner's Little Albert experiment, one of the 
+                    most well-known demonstrations of classical conditioning 
+                    in psychology. It begins with a neutral stimulus, something 
+                    that initially produces little or no particular response. 
+                    Through repeated experiences and associations, a neutral 
+                    stimulus can acquire a new meaning and eventually produce a 
+                    learned response.
+
+                </p>
+
+                <button
+                    id="startBtn"
+                    class="primary-btn"
+                >
+                    Enter the Experiment
+                    <span>→</span>
+                </button>
+
+                <div class="intro-credits">
+
+    <span class="credits-label">Created by:</span>
+
+    <div class="credits-names">
+        <span>Jared Mana-a</span>
+        <span>Elle Simeon</span>
+    </div>
+
+    <div class="credits-course">
+        PSY 108NC
+        <span>·</span>
+        BSP 2A
+        <span>·</span>
+        Experimental Psychology
+    </div>
+
+    <a
+        href="https://uc-bcf.instructure.com/courses/66710/assignments/847631"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="credits-assignment"
+    >
+        Assignment 1: Museum of the Mind
+        <span>↗</span>
+    </a>
+
+</div>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COMIC / EXPERIMENT
+        ================================================== -->
+
+        <section
+            id="comic"
+            class="screen comic-section"
+        >
+
+            <!-- Full-screen artwork -->
+
+            <div class="comic-scene-image">
+
+                <img
+                    id="panelImage"
+                    src="images/panel1.png"
+                    alt="Little Albert experiment"
+                >
+
+            </div>
+
+
+            <!-- Website branding -->
+
+            <div class="comic-brand">
+
+                <span class="comic-brand-eyebrow">
+                    Psychology Exhibit
+                </span>
+
+                <span class="comic-brand-title">
+                    Little Albert
+                </span>
+
+            </div>
+
+
+            <!-- Panel information -->
+
+            <div class="comic-scene-content">
+
+                <span
+                    id="panelLabel"
+                    class="scene-number"
+                >
+                    THE EXPERIMENT
+                </span>
+
+                <h2 id="panelTitle">
+                    Before the Fear
+                </h2>
+
+                <p id="panelText">
+                    Before conditioning, Albert showed no fear
+                    toward the white rat.
+                </p>
+
+                <div class="scene-concept">
+
+                    <span>CONCEPT</span>
+
+                    <strong id="panelConcept">
+                        Neutral Stimulus
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Interactive hotspot -->
+
+            <button
+                id="sceneHotspot"
+                class="scene-hotspot"
+                aria-label="More information"
+            >
+                i
+            </button>
+
+            <div
+                id="scenePopup"
+                class="scene-popup"
+            >
+                <button
+                    id="closePopup"
+                    class="popup-close"
+                >
+                    ×
+                </button>
+
+                <span>NEUTRAL STIMULUS</span>
+
+                <p>
+                    The white rat initially produced no
+                    fear response in Albert.
+                </p>
+            </div>
+
+
+            <!-- Counter -->
+
+            <div class="scene-counter">
+
+                <span
+                    id="panelCurrent"
+                    class="scene-counter-current"
+                >
+                    01
+                </span>
+
+                <span>/ 06</span>
+
+            </div>
+
+
+            <!-- Progress -->
+
+            <div class="scene-progress"></div>
+
+
+            <!-- Navigation -->
+
+            <button
+                id="prevBtn"
+                class="comic-arrow comic-arrow-left"
+                aria-label="Previous panel"
+            >
+                ←
+            </button>
+
+            <button
+                id="nextBtn"
+                class="comic-arrow comic-arrow-right"
+                aria-label="Next panel"
+            >
+                →
+            </button>
+
+
+            <!-- Scroll hint -->
+
+            <div class="scene-scroll">
+
+                <span class="scroll-line"></span>
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONDITIONING
+        ================================================== -->
+
+        <section
+            id="conditioning"
+            class="screen conditioning-section"
+        >
+
+            <div class="section-bg"></div>
+
+            <div class="conditioning-content">
+
+                <span class="section-eyebrow">
+                    HOW IT HAPPENED
+                </span>
+
+                <h2>
+                    Fear was
+                    <em>conditioned.</em>
+                </h2>
+
+                <p>
+                    A neutral stimulus became associated with
+                    something frightening. Eventually, the
+                    stimulus itself could trigger fear.
+                </p>
+
+                <div class="mechanism">
+
+                    <div class="mechanism-item">
+
+                        <span class="mechanism-number">
+                            01
+                        </span>
+
+                        <h3>White Rat</h3>
+
+                        <small>
+                            Neutral Stimulus
+                        </small>
+
+                    </div>
+
+                    <div class="mechanism-symbol">
+                        +
+                    </div>
+
+                    <div class="mechanism-item">
+
+                        <span class="mechanism-number">
+                            02
+                        </span>
+
+                        <h3>Loud Sound</h3>
+
+                        <small>
+                            Unconditioned Stimulus
+                        </small>
+
+                    </div>
+
+                    <div class="mechanism-symbol">
+                        =
+                    </div>
+
+                    <div class="mechanism-item">
+
+                        <span class="mechanism-number">
+                            03
+                        </span>
+
+                        <h3>Fear</h3>
+
+                        <small>
+                            Conditioned Response
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="conditioningNext"
+                    class="outline-btn"
+                >
+                    Continue
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ETHICS
+        ================================================== -->
+
+        <section
+            id="ethics"
+            class="screen ethics-section"
+        >
+
+            <div class="ethics-content">
+
+                <span class="section-eyebrow">
+                    THE QUESTION
+                </span>
+
+                <h2>
+                    Why it
+                    <em>matters?</em>
+                </h2>
+
+                <p class="ethics-lead">
+                    The Little Albert experiment became an influential demonstration 
+                    that emotional responses could be conditioned through learning and 
+                    association. It helped make classical conditioning an important 
+                    part of the study of human behavior, while also becoming a lasting 
+                    example of why psychological research must consider participant 
+                    protection and ethical responsibility.
+                </p>
+
+                <div class="ethics-grid">
+
+                    <article>
+                        <span>01</span>
+
+                        <h3>
+                            Informed Consent
+                        </h3>
+
+                        <p>
+                            Modern research places strong
+                            emphasis on informed consent and
+                            participant protection.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <span>02</span>
+
+                        <h3>
+                            Psychological Harm
+                        </h3>
+
+                        <p>
+                            Researchers today are expected to
+                            minimize unnecessary psychological
+                            distress or harm.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <span>03</span>
+
+                        <h3>
+                            Right to Protection
+                        </h3>
+
+                        <p>
+                            Participants, especially children,
+                            require heightened ethical safeguards.
+                        </p>
+                    </article>
+
+                </div>
+
+                <button
+                    id="ethicsNext"
+                    class="outline-btn"
+                >
+                    Continue
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REAL LIFE EXPERIENCE
+        ================================================== -->
+
+        <section id="memory" class="screen experiences-section">
+
+    <div class="experience-bg-text bg-text-1">
+        A neutral stimulus can acquire meaning
+        through repeated association.
+    </div>
+
+    <div class="experience-bg-text bg-text-2">
+        Emotions can be learned.
+    </div>
+
+    <div class="experience-bg-text bg-text-3">
+        Our environment shapes
+        our responses.
+    </div>
+
+    <div class="experience-bg-text bg-text-4">
+        Once learned, responses
+        can persist over time.
+    </div>
+
+    <div class="experience-bg-text bg-text-5">
+        Conditioning can happen
+        in ordinary moments.
+    </div>
+
+    <div class="experience-bg-text bg-text-6">
+        Learning does not always happen
+        intentionally.
+    </div>
+
+    <div class="experience-bg-text bg-text-7">
+        The things around us can become
+        powerful emotional triggers.
+    </div>
+
+    <!-- CENTER -->
+
+    <div class="experiences-center">
+
+        <div class="experiences-kicker">
+            REAL LIFE EXPERIENCES
+        </div>
+
+        <h2>Everyday Connections</h2>
+
+        <div class="experiences-line"></div>
+
+        <p>
+            Classical conditioning isn't just a theory.
+            It can happen in everyday life.
+        </p>
+
+        <span class="experiences-instruction">
+            CLICK A STORY TO EXPLORE
+        </span>
+
+    <a href="#final" id="reflectionButton" class="reflection-button" data-section="final">
+    <span>CONTINUE TO REFLECTION</span>
+    <strong>→</strong>
+</a>
+
+    </div>
+
+
+    <!-- STORY 1 -->
+
+    <button class="experience-card card-1" data-story="story1">
+
+        <div class="experience-number">01</div>
+
+        <div class="experience-icon">🐈</div>
+
+        <div class="experience-card-info">
+            <strong>Cat Treats</strong>
+            <span>Treats & Excitement</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY 2 -->
+
+    <button class="experience-card card-2" data-story="story2">
+
+        <div class="experience-number">02</div>
+
+        <div class="experience-icon">🌙</div>
+
+        <div class="experience-card-info">
+            <strong>Fear of the Dark</strong>
+            <span>Darkness & Fear</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY 3 -->
+
+    <button class="experience-card card-3" data-story="story3">
+
+        <div class="experience-number">03</div>
+
+        <div class="experience-icon">🚬</div>
+
+        <div class="experience-card-info">
+            <strong>Smoking Scent</strong>
+            <span>Scents & Memories</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY 4 -->
+
+    <button class="experience-card card-4" data-story="story4">
+
+        <div class="experience-number">04</div>
+
+        <div class="experience-icon">📞</div>
+
+        <div class="experience-card-info">
+            <strong>Phone Calls</strong>
+            <span>Sounds & Anxiety</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY 5 -->
+
+    <button class="experience-card card-5" data-story="story5">
+
+        <div class="experience-number">05</div>
+
+        <div class="experience-icon">⏰</div>
+
+        <div class="experience-card-info">
+            <strong>Alarm Clock</strong>
+            <span>Sound & Alertness</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY 6 -->
+
+    <button class="experience-card card-6" data-story="story6">
+
+        <div class="experience-number">06</div>
+
+        <div class="experience-icon">🌹</div>
+
+        <div class="experience-card-info">
+            <strong>Perfumes</strong>
+            <span>Scents & Memories</span>
+        </div>
+
+    </button>
+
+
+    <!-- STORY POPUP -->
+
+    <div id="experiencePopup" class="experience-popup">
+
+        <button id="experienceClose" class="experience-close">
+            ×
+        </button>
+
+        <div class="popup-number" id="popupNumber">
+        </div>
+
+        <div class="popup-category" id="popupCategory">
+        </div>
+
+        <h3 id="popupTitle">
+        </h3>
+
+        <div class="popup-divider"></div>
+
+        <p id="popupText">
+        </p>
+
+        <div class="popup-conditioning">
+
+            <div>
+                <span>BEFORE</span>
+                <strong id="popupBefore">
+                </strong>
+            </div>
+
+            <div class="popup-arrow">
+            </div>
+
+            <div>
+                <span>AFTER LEARNING</span>
+                <strong id="popupAfter">
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- =================================================
+             FINAL
+        ================================================== -->
+
+        <section
+            id="final"
+            class="screen final-section"
+        >
+
+            <div class="final-content">
+
+                <span class="section-eyebrow">
+                    REFLECTION
+                </span>
+
+                <h2>
+                    Fear can be
+                    <em>learned.</em>
+                </h2>
+
+                <p>
+                    Little Albert's story illustrates how
+                    experiences can create powerful associations.
+                    It also reminds us that understanding human
+                    behavior must go hand in hand with protecting
+                    the people involved.
+                </p>
+
+                <div class="final-divider"></div>
+
+                <p class="final-question">
+                    What associations have shaped the way
+                    you respond to the world?
+                </p>
+
+                <button
+                    id="restartBtn"
+                    class="primary-btn"
+                >
+                    Experience Again
+                    <span>↻</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
