@@ -3431,3 +3431,28 @@ body {
         letter-spacing: 2.5px;
     }
 }
+/* =========================================================
+   MOBILE: FIX HOTSPOT POSITION
+========================================================= */
+
+@media (max-width: 800px) {
+    .comic-section .scene-hotspot {
+        position: fixed !important;
+
+        left: 10% !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: 140px !important;
+
+        transform: translateX(-50%) !important;
+
+        width: 36px;
+        height: 36px;
+
+        z-index: 100;
+    }
+
+    .comic-section .scene-hotspot:hover {
+        transform: translateX(-50%) scale(1.12) !important;
+    }
+}
